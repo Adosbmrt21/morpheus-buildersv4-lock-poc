@@ -1,0 +1,21 @@
+No files changed, compilation skipped
+
+Ran 2 tests for test/PoC_C1_LockRewrite.t.sol:PoC_C1_LockRewrite
+[PASS] test_01_attack_postDepositLockRewritePermanentlyLocksPrincipal() (gas: 681388)
+Logs:
+  funding method: deal()
+  victim recorded deposit (MOR wei): 10000000000000000000000
+  lock before edit (seconds): 604800
+  victim MOR balance after deposit: 0
+  lock after edit (seconds): 340282366920938463463374607431768211455
+  victim recorded deposit after attack (MOR wei): 10000000000000000000000
+  victim MOR balance at end (still locked out): 0
+
+[PASS] test_02_control_noEditVictimWithdrawsAfterLock() (gas: 658034)
+Logs:
+  funding method: deal()
+  victim MOR balance after control withdraw: 10000000000000000000000
+
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 1.00s (5.37ms CPU time)
+
+Ran 1 test suite in 1.00s (1.00s CPU time): 2 tests passed, 0 failed, 0 skipped (2 total tests)
